@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/main.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <section class="intro">
+        <i id="arrow_left" class="fas fa-arrow-left"></i>
+        <i id="arrow_right" class="fas fa-arrow-right"></i>
+        
+      <section>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+  
+           
+        <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+      
+
+
+        
+<script> 
+    $(document).ready(function(){
+       $("#arrow_right").click(function(){
+   
+           let bg_img = $(".intro").css("background-image");
+           let cut = bg_img.slice(26,-2);
+           console.log(cut);
+           if(cut === "/images/baner1.jpg"){
+               $(".intro").css('background-image', 'url(images/baner2.jpg)').toggle("slide", {direction:"right"}, 400);
+               $(".intro").css('background-image', 'url(images/baner1.jpg)').toggle("slide", {direction:"left"}, 400);
+               $('.page-container').fadeOut();
+               $('.banner__2__hero').fadeIn(400);
+           } else {
+               $(".intro").css('background-image', 'url(images/baner1.jpg)').toggle("slide", {direction:"right"}, 400);
+               $(".intro").css('background-image', 'url(images/baner2.jpg)').toggle("slide", {direction:"left"}, 400);
+               $('.page-container').fadeIn();
+               $('.banner__2__hero').fadeOut(400);
+           }
+       });
+       
+       
+           $("#arrow_left").click(function(){
+       
+           let bg_img = $(".intro").css("background-image");
+           let cut = bg_img.slice(26,-2);
+           console.log(cut);
+          
+           if(cut === "/images/baner2.jpg"){
+                   $(".intro").css( {
+                       'background-image' : 'url(images/baner1.jpg',
+                       'animation': 'slide 0.3s linear forwards'
+                   });
+                   $('.page-container').fadeIn();
+                   $('.banner__2__hero').fadeOut(400);
+               } else {
+                   $(".intro").css('background-image', 'url(images/baner2.jpg)');
+                   $('.page-container').fadeOut();
+                   $('.banner__2__hero').fadeIn(400);
+               }     
+           });
+       });
+       
+       </script>
+   
+   
+</body>
+</html>

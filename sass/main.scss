@@ -1,0 +1,31 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.intro{
+    background: url("/images/baner1.jpg");
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .fas{
+      font-size: 3em;
+      position:absolute;
+      color: #fff;
+      cursor:pointer;
+    }
+    .fa-arrow-left{
+      left:0;
+      top: 50%;
+    }
+    
+     .fa-arrow-right{
+       right:0;
+       top: 50%;
+    }
+   
+  }
+  
