@@ -4,7 +4,7 @@
 }
 
 .intro {
-  background: url("/images/baner1.jpg");
+  background: url("/images/baner1.jpeg");
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 .intro .fas {
   font-size: 3em;
   position: absolute;
-  color: #fff;
+  color: red;
   cursor: pointer;
 }
 
@@ -26,5 +26,21 @@
 .intro .fa-arrow-right {
   right: 0;
   top: 50%;
+}
+
+.intro ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.intro li {
+  color: red;
+  font-size: 1.5em;
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

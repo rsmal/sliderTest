@@ -17,6 +17,12 @@
         <i id="arrow_left" class="fas fa-arrow-left"></i>
         <i id="arrow_right" class="fas fa-arrow-right"></i>
         
+        <ul>
+            <li>home</li>
+            <li>home1</li>
+            <li>home2</li>
+            <li>home3</li>
+        </ul>
       <section>
 
 
@@ -42,38 +48,19 @@
            let cut = bg_img.slice(26,-2);
            console.log(cut);
            if(cut === "/images/baner1.jpg"){
-               $(".intro").css('background-image', 'url(images/baner2.jpg)').toggle("slide", {direction:"right"}, 400);
-               $(".intro").css('background-image', 'url(images/baner1.jpg)').toggle("slide", {direction:"left"}, 400);
+               $(".intro").css('background-image', 'url(images/baner2.jpeg)').toggle("slide", {direction:"right"}, 400);
+               $(".intro").css('background-image', 'url(images/baner1.jpeg)').toggle("slide", {direction:"left"}, 400);
                $('.page-container').fadeOut();
                $('.banner__2__hero').fadeIn(400);
            } else {
-               $(".intro").css('background-image', 'url(images/baner1.jpg)').toggle("slide", {direction:"right"}, 400);
-               $(".intro").css('background-image', 'url(images/baner2.jpg)').toggle("slide", {direction:"left"}, 400);
+               $(".intro").css('background-image', 'url(images/baner1.jpeg)').toggle("slide", {direction:"right"}, 400);
+               $(".intro").css('background-image', 'url(images/baner2.jpeg)').toggle("slide", {direction:"left"}, 400);
                $('.page-container').fadeIn();
                $('.banner__2__hero').fadeOut(400);
            }
        });
        
        
-           $("#arrow_left").click(function(){
-       
-           let bg_img = $(".intro").css("background-image");
-           let cut = bg_img.slice(26,-2);
-           console.log(cut);
-          
-           if(cut === "/images/baner2.jpg"){
-                   $(".intro").css( {
-                       'background-image' : 'url(images/baner1.jpg',
-                       'animation': 'slide 0.3s linear forwards'
-                   });
-                   $('.page-container').fadeIn();
-                   $('.banner__2__hero').fadeOut(400);
-               } else {
-                   $(".intro").css('background-image', 'url(images/baner2.jpg)');
-                   $('.page-container').fadeOut();
-                   $('.banner__2__hero').fadeIn(400);
-               }     
-           });
        });
        
        </script>
