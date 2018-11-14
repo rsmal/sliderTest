@@ -4,7 +4,11 @@
 }
 
 .intro {
+<<<<<<< HEAD
   background: url("/images/baner1.jpeg");
+=======
+  background: url("../images/baner1.jpg");
+>>>>>>> 7fa468700499bb62e05b46021dcd4d880b9c4c9e
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
@@ -27,6 +31,7 @@
   right: 0;
   top: 50%;
 }
+<<<<<<< HEAD
 
 .intro ul {
   display: -webkit-box;
@@ -44,3 +49,6 @@
   padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */
+=======
+/*# sourceMappingURL=main.css.map */
+>>>>>>> 7fa468700499bb62e05b46021dcd4d880b9c4c9e
